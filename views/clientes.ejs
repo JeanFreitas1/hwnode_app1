@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <title>Clientes - Listagem</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+        table,th,td{
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+        th,td{
+            font-size: 18px;
+            padding: 6px 10px;
+        }
+        th{
+            text-align: left;
+            font-size: 22px;
+        }
+        tr:first-child{
+            border: 2px solid black;
+            font-size: 24px;
+        }
+        tr:nth-of-type(2n){
+            background-color: rgb(230,230,230);
+        }
+
+        .container{
+
+            text-align: center;
+
+            margin: 0 auto;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            height: 40px;
+            width: 100px;
+            line-height: 40px;
+            background: #1fb4ff;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lancamento de OS: </h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Centro de Custo</th>
+                <th>Pavimento</th>
+                <th>Pensagem</th>
+                <th>Entulho</th>
+                <th>Numero de OS</th>
+                <th>Data</th>
+                <th>Foto</th>
+                <th>Logradouro</th>
+                <th>N. Casa</th>
+                <th>Bairro</th>
+                <th>Comprimento</th>
+                <th>Largura</th>
+                <th>Area</th>
+            </tr>
+            <% lista.forEach(function(user){ %>
+            <tr>
+                <td><%= user.id %></td>
+                <td><%= user.centro_custo %></td>
+                <td><%= user.pavto %></td>
+                <td><%= user.pesagem %></td>
+                <td><%= user.entulho %></td>
+                <td><%= user.n_os %></td>
+                <td><%= user.data %></td>
+                <td><%= user.foto %></td>
+                <td><%= user.logradouro %></td>
+                <td><%= user.n_casa %></td>
+                <td><%= user.bairro %></td>
+                <td><%= user.comp %></td>
+                <td><%= user.larg %></td>
+                <td><%= user.area %></td>
+            </tr>
+            <% }) %>
+        </table>
+    
+        <a href="/">Inicio</a>
+    </div><!-- container -->
+    
+</body>
+</html>

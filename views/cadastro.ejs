@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <title>Cadastrar Cliente</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+        }
+        .container{
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgb(230,230,230);
+        }
+        .cadastro{
+            text-align: center;
+            padding: 50px 0;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .cadastro h2{
+            margin-bottom: 25px;
+        }
+        input[type=text]{
+            border: 1px solid #2d2d2d;
+            margin-bottom: 10px;
+            height: 40px;
+            width: 100%;
+            display: inline-block;
+            max-width: 300px;
+            padding: 0 8px;
+        }
+        input[type=submit]{
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            border: 0;
+            background: #1fb4ff;
+        }
+
+        a{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-decoration: none;
+            width: 100px;
+            height: 30px;
+            display: inline-block;
+            border: 0;
+            font-size: 20px;
+            line-height: 40px;
+            background: #1fb4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cadastro">
+            <h2>Cadastrar Cliente</h2>
+            <form method="post">
+                <input type="text" placeholder="Centro de Custo" name="centro_custo">
+                <input type="text" placeholder="Pavimento" name="pavto">
+                <input type="text" placeholder="Pensagem" name="pesagem">
+                <input type="text" placeholder="Entulho" name="entulho">
+                
+                <input type="text" placeholder="Numero de OS" name="n_os">
+                <input type="text" placeholder="Data" name="data">
+                <input type="text" placeholder="Foto" name="foto">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="text" placeholder="N. Casa" name="n_casa">
+                <input type="text" placeholder="Bairro" name="bairro">
+                <input type="text" placeholder="Comprimento" name="comp">
+                <input type="text" placeholder="Largura" name="larg">
+                <input type="submit" value="Cadastrar">
+            </form>
+            <a href="/">Inicio</a>
+        </div><!-- cadastro -->
+        
+    </div><!-- container -->
+    
+</body>
+</html>
